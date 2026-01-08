@@ -1,4 +1,3 @@
-// Originally from https://github.com/athackst/vscode_ros2_workspace
 // See https://aka.ms/vscode-remote/devcontainer.json for format details.
 {
 	"dockerFile": "Dockerfile",
@@ -15,11 +14,8 @@
 		"--security-opt=apparmor:unconfined",
 		"--volume=/tmp/.X11-unix:/tmp/.X11-unix",
 		"--volume=/mnt/wslg:/mnt/wslg",
-		"--ipc=host",
-		"--privileged",
-		"--gpus=all"
+		"--ipc=host"
 	],
-	"privileged": true, // Needed to access camera
 	"containerEnv": {
 		"DISPLAY": "${localEnv:DISPLAY}", // Needed for GUI try ":0" for windows
 		"WAYLAND_DISPLAY": "${localEnv:WAYLAND_DISPLAY}",
@@ -35,11 +31,9 @@
 				"betwo.b2-catkin-tools",
 				"DotJoshJohnson.xml",
 				"ms-azuretools.vscode-docker",
-				"ranch-hand-robotics.rde-pack",
+				"ms-iot.vscode-ros",
 				"ms-python.python",
 				"ms-vscode.cpptools",
-				"ms-python.black-formatter",
-				"charliermarsh.ruff",
 				"redhat.vscode-yaml",
 				"smilerobotics.urdf",
 				"streetsidesoftware.code-spell-checker",
@@ -48,6 +42,5 @@
 				"zachflower.uncrustify"
 			]
 		}
-	},
-   "postCreateCommand": "bash -i setup/setup.sh"
+	}
 }
