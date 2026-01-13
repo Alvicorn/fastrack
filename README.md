@@ -12,7 +12,7 @@ Robotics software is particularly sensitive to differences in system configurati
 git clone -b cmpt720_sp26 git@github.com:SFU-MARS/ros2_ws.git
 ```
 
-2. See [these instructions](https://github.com/SFU-MARS/ros2_ws/tree/cmpt720_sp26)
+2. See [these instructions](https://github.com/SFU-MARS/ros2_tutorial/wiki/Building-and-using-the-dev-container)
 
 3. See [this article](https://www.allisonthackston.com/articles/vscode-docker-ros2.html) for deeper insight
 
