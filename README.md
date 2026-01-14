@@ -1,6 +1,6 @@
 # ROS2 Workspace
 Workspace for `CMPT720` running **ROS2 Humble**
-- Originally fork of https://github.com/athackst/vscode_ros2_workspace/tree/humble-nvidia
+- Fork of https://github.com/athackst/vscode_ros2_workspace/tree/humble
 
 In this course, we use Docker together with VS Code Dev Containers to provide a consistent and reliable development environment for ROS 2. 
 Robotics software is particularly sensitive to differences in system configuration, and this approach helps us avoid many common issues.
