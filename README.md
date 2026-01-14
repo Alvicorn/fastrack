@@ -6,7 +6,8 @@ In this course, we use Docker together with VS Code Dev Containers to provide a 
 Robotics software is particularly sensitive to differences in system configuration, and this approach helps us avoid many common issues.
 
 ## Dev Container Setup
-1. Clone this the `cmpt720_sp26` branch of this repo
+1. Make sure Docker, VS Code, and VS Code Remote Containers extension are installed. See [Docker Setup](#docker-setup)
+2. Clone this the `cmpt720_sp26` branch of this repo
 
 ```bash
 git clone -b cmpt720_sp26 git@github.com:SFU-MARS/ros2_ws.git
