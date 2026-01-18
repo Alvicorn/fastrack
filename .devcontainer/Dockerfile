@@ -15,5 +15,5 @@ ARG WORKSPACE
 RUN echo "if [ -f ${WORKSPACE}/install/setup.bash ]; then source ${WORKSPACE}/install/setup.bash; fi" >> /home/ros/.bashrc
 
 # Set env variables for Nav2
-RUN echo "export TURTLEBOT3_MODEL=waffle" >> /home/ros/.bashrc
+RUN echo "export TURTLEBOT3_MODEL=burger" >> /home/ros/.bashrc
 RUN echo "export GAZEBO_MODEL_PATH=\$GAZEBO_MODEL_PATH:/opt/ros/humble/share/turtlebot3_gazebo/models" >> /home/ros/.bashrc
