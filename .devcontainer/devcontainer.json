@@ -42,5 +42,6 @@
 				"zachflower.uncrustify"
 			]
 		}
-	}
+	},
+	"postCreateCommand": "bash -i setup/setup.sh"
 }

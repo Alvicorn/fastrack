@@ -7,6 +7,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     ros-humble-turtlebot3-msgs \
     ros-humble-turtlebot3 \
     ros-humble-turtlebot3-gazebo \
+    nano \
+    tmux \
     && rm -rf /var/lib/apt/lists/*
 ENV DEBIAN_FRONTEND=dialog
 
