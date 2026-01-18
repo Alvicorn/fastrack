@@ -43,5 +43,5 @@
 			]
 		}
 	},
-	"postCreateCommand": "bash -i setup/setup.sh"
+	"postCreateCommand": "bash -i setup/setup.sh --no_import"
 }
