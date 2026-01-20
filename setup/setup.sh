@@ -30,6 +30,7 @@ done
 
 set -e
 mkdir -p src
+mkdir -p py
 
 # ======================
 # Clone non-ROS packages
@@ -48,6 +49,8 @@ if [[ $container == true ]]; then
         ~/.fzf/install --key-bindings --completion --update-rc
     fi
 fi
+
+pip install --user matplotlib
 
 # ============
 # ROS packages
