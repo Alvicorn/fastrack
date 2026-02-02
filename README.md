@@ -2,7 +2,7 @@
 Workspace for `CMPT720` running **ROS2 Humble**
 - Fork of https://github.com/athackst/vscode_ros2_workspace/tree/humble
 
-In this course, we use Docker together with VS Code Dev Containers to provide a consistent and reliable development environment for ROS 2. 
+In this course, we use Docker together with VS Code Dev Containers to provide a consistent and reliable development environment for ROS 2.
 Robotics software is particularly sensitive to differences in system configuration, and this approach helps us avoid many common issues.
 
 ## Dev Container Setup
@@ -37,7 +37,44 @@ sudo usermod -aG docker $USER
 newgrp docker
 ```
 
+## To run Gazebo GUI on Windows (Docker)
 
+This workspace supports running the Gazebo GUI on **Windows 11/10 with WSLg** using Docker Desktop and VS Code Dev Containers.
 
+### Requirements
+- make sure the Windows come with **WSL2 + WSLg enabled**
+  * Verify WSLg is working by running this in your WSL terminal (not the container):
+    ```bash
+    glxinfo | grep OpenGL
+    ```
+  * Rebuild the dev container
+- **Docker Desktop** (WSL backend)
+- **VS Code** with **Dev Containers** extension
 
-# Usage
+### Steps
+1. Make sure we are using the right devcontainer config file:
+   ```sh
+   mv .devcontainer/devcontainer.json .devcontainer/devcontainer.json.bk  # backup
+   mv .devcontainer/wsl-devcontainer.json .devcontainer/devcontainer.json
+   ```
+2. Open this workspace in VS Code
+3. Rebuild container: press `F1` → **Dev Containers: Reopen in Container**
+4. Wait for the container to build and attach
+5. Inside the container terminal, launch Gazebo:
+   ```bash
+   gazebo  --verbose
+   ```
+
+### Notes
+
+* GUI support is enabled via WSLg socket mounting points and environment variables defined in `mounts` and `containerEnv`:
+
+  ```
+  .devcontainer/wsl-devcontainer.json
+  ```
+
+* This configuration forces **software OpenGL rendering**, if Gazebo opens but shows a black window or renders slowly:
+
+  ```json
+  "LIBGL_ALWAYS_SOFTWARE": "1"
+  ```

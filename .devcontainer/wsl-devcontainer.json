@@ -1,4 +1,8 @@
 // See https://aka.ms/vscode-remote/devcontainer.json for format details.
+//
+// NOTE: for Windows WSLg enabled systems only
+//       wslg: https://github.com/microsoft/wslg
+//
 {
 	"dockerFile": "Dockerfile",
 	"build": {
@@ -12,17 +16,20 @@
 		"--cap-add=SYS_PTRACE",
 		"--security-opt=seccomp:unconfined",
 		"--security-opt=apparmor:unconfined",
-		"--volume=/tmp/.X11-unix:/tmp/.X11-unix",
-		"--volume=/mnt/wslg:/mnt/wslg",
-		"--ipc=host"
+		"--ipc=host",
+                "--device=/dev/dxg"
 	],
 	"containerEnv": {
-		"DISPLAY": "${localEnv:DISPLAY}",
-		"WAYLAND_DISPLAY": "${localEnv:WAYLAND_DISPLAY}",
-		"XDG_RUNTIME_DIR": "${localEnv:XDG_RUNTIME_DIR}",
-		"PULSE_SERVER": "${localEnv:PULSE_SERVER}",
+		"DISPLAY": ":0",   // This sometimes set to (wrong) `:1` if read from `DISPLAY` envar
+		"WAYLAND_DISPLAY": "wayland-0",
+		"XDG_RUNTIME_DIR": "/mnt/wslg/runtime-dir",
+		"PULSE_SERVER": "/mnt/wslg/PulseServer",
 		"LIBGL_ALWAYS_SOFTWARE": "1" // Needed for software rendering of opengl
 	},
+	"mounts": [
+		"source=/mnt/wslg,target=/mnt/wslg,type=bind",
+		"source=/run/desktop/mnt/host/wslg/.X11-unix,target=/tmp/.X11-unix,type=bind"
+	],
 	// Set *default* container specific settings.json values on container create.
 	"customizations": {
 		"vscode": {
