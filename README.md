@@ -43,11 +43,11 @@ This workspace supports running the Gazebo GUI on **Windows 11/10 with WSLg** us
 
 ### Requirements
 - make sure the Windows come with **WSL2 + WSLg enabled**
-  * Verify WSLg is working by running this in your WSL terminal (not the container):
+  * Verify WSLg is working by running this in your WSL terminal (not from the container):
     ```bash
     glxinfo | grep OpenGL
     ```
-  * Rebuild the dev container
+    - this should give you OpenGL vendor and render info. Otherwise, you should first enable WSLg following this: https://github.com/microsoft/wslg
 - **Docker Desktop** (WSL backend)
 - **VS Code** with **Dev Containers** extension
 
