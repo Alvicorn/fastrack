@@ -50,8 +50,6 @@ if [[ $container == true ]]; then
     fi
 fi
 
-pip install --user matplotlib
-
 # ============
 # ROS packages
 # ============
