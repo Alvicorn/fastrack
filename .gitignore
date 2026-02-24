@@ -55,10 +55,6 @@ install/
 log/
 site/
 
-# Source folders
-src/
-py/
-
 # Misc files
 frames*
 *log

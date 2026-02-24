@@ -27,4 +27,7 @@
         "**/install": true,
         "**/log": true
     },
+    "cSpell.words": [
+        "isort"
+    ],
 }

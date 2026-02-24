@@ -1,0 +1,92 @@
+# Use the Google style in this project.
+BasedOnStyle: Google
+Standard: c++17
+
+IndentWidth: 2
+TabWidth: 2
+UseTab: Never
+ContinuationIndentWidth: 2
+ColumnLimit: 100
+
+# Some folks prefer to write "int& foo" while others prefer "int &foo".  The
+# Google Style Guide only asks for consistency within a project, we chose
+# "int& foo" for this project:
+DerivePointerAlignment: false
+PointerAlignment: Left
+
+# The Google Style Guide only asks for consistency w.r.t. "east const" vs.
+# "const west" alignment of cv-qualifiers. In this project we use "east const".
+QualifierAlignment: Right
+
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterClass: true
+  AfterStruct: true
+  AfterEnum: true
+  AfterFunction: true
+  AfterNamespace: true
+  AfterControlStatement: false
+  BeforeElse: false
+  BeforeCatch: false
+
+AlignAfterOpenBracket: DontAlign
+BinPackArguments: false
+BinPackParameters: false
+
+ConstructorInitializerIndentWidth: 2
+BreakConstructorInitializers: BeforeComma
+PackConstructorInitializers: Never
+
+SpacesInAngles: Never
+
+IndentAccessModifiers: false
+AccessModifierOffset: 0
+
+SortIncludes: true
+IncludeBlocks: Regroup
+
+IncludeCategories:
+# package name
+- Regex: '^"fastrack/'
+- Priority: 0
+
+# Nav2 headers
+- Regex: '^<nav2_'
+- Priority: 100
+
+# core ROS2 headers
+- Regex: '^<rclcpp/'
+- Priority: 200
+- Regex: '^<rclcpp_lifecycle/'
+- Priority: 200
+- Regex: '^<pluginlib/'
+- Priority: 200
+
+# ROS2 messages
+- Regex: '^<geometry_msgs/'
+- Priority: 300
+- Regex: '^<nav_msgs/'
+- Priority: 300
+- Regex: '^<std_msgs/'
+- Priority: 300
+
+# System and C-language headers
+- Regex: '^<[A-Za-z0-9_]*\.h>$'
+  Priority: 300
+- Regex: '^<sys/[A-Za-z0-9_]*\.h>$'
+  Priority: 300
+
+# third-party libraries
+- Regex: '^<.*>'
+- Priority: 400
+
+# local includes
+- Regex: '^".*"'
+- Priority: 500
+
+
+NamespaceIndentation: None
