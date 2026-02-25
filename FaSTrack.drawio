@@ -156,6 +156,67 @@
         <mxCell id="6NO3JtdpPVzFZ5NMgDf--75" parent="6NO3JtdpPVzFZ5NMgDf--42" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;Loop while planning goal is not reached OR planning horizon is exceeded&lt;/span&gt;" vertex="1">
           <mxGeometry height="30" width="120" x="170" y="160" as="geometry" />
         </mxCell>
+        <mxCell id="6NO3JtdpPVzFZ5NMgDf--78" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Interim Deliverable" vertex="1">
+          <mxGeometry height="480" width="360" x="1880" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6NO3JtdpPVzFZ5NMgDf--85" edge="1" parent="6NO3JtdpPVzFZ5NMgDf--78" source="6NO3JtdpPVzFZ5NMgDf--77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="6NO3JtdpPVzFZ5NMgDf--79">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6NO3JtdpPVzFZ5NMgDf--88" connectable="0" parent="6NO3JtdpPVzFZ5NMgDf--85" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Planning Path" vertex="1">
+          <mxGeometry relative="1" x="-0.7125" y="-1" as="geometry">
+            <mxPoint x="1" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6NO3JtdpPVzFZ5NMgDf--77" parent="6NO3JtdpPVzFZ5NMgDf--78" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#A9C4EB;" value="Planner Server" vertex="1">
+          <mxGeometry height="40" width="120" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6NO3JtdpPVzFZ5NMgDf--86" edge="1" parent="6NO3JtdpPVzFZ5NMgDf--78" source="6NO3JtdpPVzFZ5NMgDf--84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="180" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6NO3JtdpPVzFZ5NMgDf--89" connectable="0" parent="6NO3JtdpPVzFZ5NMgDf--86" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Tracking Path" vertex="1">
+          <mxGeometry relative="1" x="-0.8" y="-1" as="geometry">
+            <mxPoint x="1" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6NO3JtdpPVzFZ5NMgDf--84" parent="6NO3JtdpPVzFZ5NMgDf--78" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#A9C4EB;" value="TurtleBot3 /&lt;div&gt;Dummy Path&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="120" x="200" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6NO3JtdpPVzFZ5NMgDf--91" edge="1" parent="6NO3JtdpPVzFZ5NMgDf--78" source="6NO3JtdpPVzFZ5NMgDf--79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="6NO3JtdpPVzFZ5NMgDf--90">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6NO3JtdpPVzFZ5NMgDf--94" connectable="0" parent="6NO3JtdpPVzFZ5NMgDf--91" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Relative State" vertex="1">
+          <mxGeometry relative="1" x="-0.025" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6NO3JtdpPVzFZ5NMgDf--79" parent="6NO3JtdpPVzFZ5NMgDf--78" style="rounded=1;whiteSpace=wrap;html=1;" value="Relative State ROS2 Node" vertex="1">
+          <mxGeometry height="40" width="120" x="120" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="6NO3JtdpPVzFZ5NMgDf--109" edge="1" parent="6NO3JtdpPVzFZ5NMgDf--78" source="6NO3JtdpPVzFZ5NMgDf--90" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="6NO3JtdpPVzFZ5NMgDf--92">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6NO3JtdpPVzFZ5NMgDf--90" parent="6NO3JtdpPVzFZ5NMgDf--78" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;OptimizedDP ROS2 Node&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="120" x="120" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="6NO3JtdpPVzFZ5NMgDf--93" parent="6NO3JtdpPVzFZ5NMgDf--78" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EA6B66;" value="Tracking Error Bound" vertex="1">
+          <mxGeometry height="40" width="120" x="40" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="6NO3JtdpPVzFZ5NMgDf--92" parent="6NO3JtdpPVzFZ5NMgDf--78" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EA6B66;" value="Optimal Tracking Controller" vertex="1">
+          <mxGeometry height="40" width="120" x="200" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="6NO3JtdpPVzFZ5NMgDf--108" edge="1" parent="6NO3JtdpPVzFZ5NMgDf--78" source="6NO3JtdpPVzFZ5NMgDf--90" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.442;entryY=0.05;entryDx=0;entryDy=0;entryPerimeter=0;" target="6NO3JtdpPVzFZ5NMgDf--93">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6NO3JtdpPVzFZ5NMgDf--110" connectable="0" parent="6NO3JtdpPVzFZ5NMgDf--108" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Value Function" vertex="1">
+          <mxGeometry relative="1" x="-0.7751" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6NO3JtdpPVzFZ5NMgDf--111" parent="6NO3JtdpPVzFZ5NMgDf--78" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Evaluate the OTC" vertex="1">
+          <mxGeometry height="30" width="60" x="280" y="350" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
