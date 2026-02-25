@@ -1,21 +1,25 @@
-# ROS2 Workspace
-Workspace for `CMPT720` running **ROS2 Humble**
-- Fork of https://github.com/athackst/vscode_ros2_workspace/tree/humble
+# FaSTrack Nav2 Plugin
+Workspace running **ROS2 Humble**
+- Fork of https://github.com/SFU-MARS/ros2_ws/tree/cmpt720_sp26
 
-In this course, we use Docker together with VS Code Dev Containers to provide a consistent and reliable development environment for ROS 2.
-Robotics software is particularly sensitive to differences in system configuration, and this approach helps us avoid many common issues.
+This term project for SFU CMPT 720 (Spring 2026) uses Docker together with VS Code Dev Containers to provide a consistent and reliable development environment for ROS 2. Robotics software is particularly sensitive to differences in system configuration, and this approach helps us avoid many common issues.
 
 ## Dev Container Setup
 1. Make sure Docker, VS Code, and VS Code Remote Containers extension are installed. See [Docker Setup](#docker-setup)
-2. Clone this the `cmpt720_sp26` branch of this repo
+2. Clone this repo
 
 ```bash
-git clone -b cmpt720_sp26 git@github.com:SFU-MARS/ros2_ws.git
+$ git clone git@github.com:Alvicorn/fastrack.git
+```
+3. Get the latest update from the course repo
+```bash
+$ git fetch --all
+$ git merge base/cmpt720_sp26 --allow-unrelated-histories
 ```
 
-2. See [these instructions](https://github.com/SFU-MARS/ros2_tutorial/wiki/Building-and-using-the-dev-container)
+4. See [these instructions](https://github.com/SFU-MARS/ros2_tutorial/wiki/Building-and-using-the-dev-container)
 
-3. See [this article](https://www.allisonthackston.com/articles/vscode-docker-ros2.html) for deeper insight
+5. See [this article](https://www.allisonthackston.com/articles/vscode-docker-ros2.html) for deeper insight
 
 ## Docker Setup
 Before proceeding, ensure the following are installed on your system:

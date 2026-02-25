@@ -2,6 +2,16 @@ FROM althack/ros2:humble-dev
 
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y --no-install-recommends \
+    ` # system packages ` \
+    build-essential \
+    ca-certificates \
+    libtinfo5 \
+    locales \
+    nano \
+    tmux \
+    wget \
+    git \
+    \
     ` # ROS2 core libraries` \
     ros-humble-navigation2 \
     ros-humble-nav2-bringup \
@@ -13,18 +23,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     ros-dev-tools \
     ros-humble-desktop \
     ros-humble-turtlesim \
-    \
-    ` # install other packages ` \
-    locales \
-    nano \
-    tmux \
     && rm -rf /var/lib/apt/lists/*
 ENV DEBIAN_FRONTEND=dialog
 
 # Additional pip packages
 COPY requirements.txt /tmp/requirements.txt
 RUN pip install --upgrade pip \
-    && pip install --no-cache-dir --timeout 2000 -r /tmp/requirements.txt
+    && pip install --no-cache-dir --timeout 3000 -r /tmp/requirements.txt
 
 # Set up auto-source of workspace for ros user
 ARG WORKSPACE=/workspaces/fastrack

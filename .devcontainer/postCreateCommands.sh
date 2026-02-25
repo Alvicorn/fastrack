@@ -10,6 +10,6 @@ echo "Installing pre-commit..."
 {
     pre-commit install
     # pre-commit autoupdate
-}
+} &
 
 echo "Setup complete"
