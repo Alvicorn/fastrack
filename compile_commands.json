@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/workspaces/fastrack/build/fastrack_core",
+  "command": "/usr/bin/c++ -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -I/workspaces/fastrack/src/fastrack_core/include -isystem /opt/ros/humble/include/rclcpp -isystem /usr/include/eigen3 -isystem /opt/ros/humble/include/ament_index_cpp -isystem /opt/ros/humble/include/libstatistics_collector -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/fastcdr -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/humble/include/rmw -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_cpp -isystem /opt/ros/humble/include/rcl -isystem /opt/ros/humble/include/rcl_interfaces -isystem /opt/ros/humble/include/rcl_logging_interface -isystem /opt/ros/humble/include/rcl_yaml_param_parser -isystem /opt/ros/humble/include/libyaml_vendor -isystem /opt/ros/humble/include/tracetools -isystem /opt/ros/humble/include/rcpputils -isystem /opt/ros/humble/include/statistics_msgs -isystem /opt/ros/humble/include/rosgraph_msgs -isystem /opt/ros/humble/include/rosidl_typesupport_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_c -Wall -Wextra -Wpedantic -o CMakeFiles/fastrack_core_lib.dir/src/t5D_p3D_dublins_car_dynamics.cpp.o -c /workspaces/fastrack/src/fastrack_core/src/t5D_p3D_dublins_car_dynamics.cpp",
+  "file": "/workspaces/fastrack/src/fastrack_core/src/t5D_p3D_dublins_car_dynamics.cpp"
+},
+{
+  "directory": "/workspaces/fastrack/build/fastrack_core",
+  "command": "/usr/bin/c++ -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -I/workspaces/fastrack/src/fastrack_core/include -I/workspaces/fastrack/src/fastrack_core/test -isystem /opt/ros/humble/src/gtest_vendor/include -isystem /usr/include/eigen3 -isystem /opt/ros/humble/include/rclcpp -isystem /opt/ros/humble/include/ament_index_cpp -isystem /opt/ros/humble/include/libstatistics_collector -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/fastcdr -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/humble/include/rmw -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_cpp -isystem /opt/ros/humble/include/rcl -isystem /opt/ros/humble/include/rcl_interfaces -isystem /opt/ros/humble/include/rcl_logging_interface -isystem /opt/ros/humble/include/rcl_yaml_param_parser -isystem /opt/ros/humble/include/libyaml_vendor -isystem /opt/ros/humble/include/tracetools -isystem /opt/ros/humble/include/rcpputils -isystem /opt/ros/humble/include/statistics_msgs -isystem /opt/ros/humble/include/rosgraph_msgs -isystem /opt/ros/humble/include/rosidl_typesupport_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_c -Wall -Wextra -Wpedantic -o CMakeFiles/fastrack_core_t5D_p3D_dublins_car_dynamics.dir/test/test_t5D_p3D_dublins_car_dynamics.cpp.o -c /workspaces/fastrack/src/fastrack_core/test/test_t5D_p3D_dublins_car_dynamics.cpp",
+  "file": "/workspaces/fastrack/src/fastrack_core/test/test_t5D_p3D_dublins_car_dynamics.cpp"
+},
+{
+  "directory": "/workspaces/fastrack/build/fastrack_core/gtest",
+  "command": "/usr/bin/c++  -I/opt/ros/humble/src/gtest_vendor/. -isystem /opt/ros/humble/src/gtest_vendor/include -fPIC -Wno-missing-field-initializers -Wall -Wextra -Wpedantic -Wno-null-dereference -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /opt/ros/humble/src/gtest_vendor/src/gtest-all.cc",
+  "file": "/opt/ros/humble/src/gtest_vendor/src/gtest-all.cc"
+},
+{
+  "directory": "/workspaces/fastrack/build/fastrack_core/gtest",
+  "command": "/usr/bin/c++  -I/opt/ros/humble/src/gtest_vendor/. -isystem /opt/ros/humble/src/gtest_vendor/include -Wall -Wextra -Wpedantic -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /opt/ros/humble/src/gtest_vendor/src/gtest_main.cc",
+  "file": "/opt/ros/humble/src/gtest_vendor/src/gtest_main.cc"
+}
+]

@@ -84,14 +84,31 @@ This workspace supports running the Gazebo GUI on **Windows 11/10 with WSLg** us
   ```
 
 ### Running Tests
-```
-colcon test --ctest-args tests [package_selection_args]
+```bash
+colcon build
+colcon test
 ```
 
 To examine test results
-```
+```bash
 colcon test-result --all
+```
 
-# or with the verbose flag for more info
-colcon test-result --all --verbose
+
+### Commiting
+
+For static analysis and automated linting a pre-commit file has been added with ruff,
+clang-tidy and clang format enabled.
+
+Before commiting a change, update the `compile_commands.json` file with following
+```bash
+# move to the root of the project
+cd /workspaces/fastrack
+
+# create a new compile_commands.json
+colcon build --cmake-args -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+
+# move it out of the build folder to the root folder
+rm compile_commands.json
+mv build/compile_commands.json compile_commands.json
 ```
