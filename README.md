@@ -82,3 +82,16 @@ This workspace supports running the Gazebo GUI on **Windows 11/10 with WSLg** us
   ```json
   "LIBGL_ALWAYS_SOFTWARE": "1"
   ```
+
+### Running Tests
+```
+colcon test --ctest-args tests [package_selection_args]
+```
+
+To examine test results
+```
+colcon test-result --all
+
+# or with the verbose flag for more info
+colcon test-result --all --verbose
+```

@@ -2,7 +2,7 @@ FROM althack/ros2:humble-dev
 
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    ` # system packages ` \
+    # system packages
     build-essential \
     ca-certificates \
     libtinfo5 \
@@ -12,18 +12,28 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     wget \
     git \
     \
-    ` # ROS2 core libraries` \
+    # third party libraries
+    libeigen3-dev \
+    libopenmpi-dev \
+    \
+    # ROS2 core libraries
     ros-humble-navigation2 \
     ros-humble-nav2-bringup \
     ros-humble-turtlebot3-msgs \
     ros-humble-turtlebot3 \
     ros-humble-turtlebot3-gazebo \
+    ros-humble-nav2-msgs \
+    ros-humble-tf2-geometry-msgs \
+    ros-humble-ompl \
+    ros-humble-osqp-vendor \
     \
-    `# install ROS demo nodes` \
+    # install ROS demo nodes \
     ros-dev-tools \
     ros-humble-desktop \
     ros-humble-turtlesim \
+    \
     && rm -rf /var/lib/apt/lists/*
+
 ENV DEBIAN_FRONTEND=dialog
 
 # Additional pip packages
