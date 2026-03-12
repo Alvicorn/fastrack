@@ -1,6 +1,7 @@
 devel/
 logs/
 build/
+Testing/
 bin/
 lib/
 msg_gen/
@@ -58,3 +59,7 @@ site/
 # Misc files
 frames*
 *log
+
+# linting cache
+.ruff_cache
+.mypy_cache

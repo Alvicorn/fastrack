@@ -28,6 +28,7 @@
         "**/log": true
     },
     "cSpell.words": [
+        "Eigen",
         "isort"
     ],
 }

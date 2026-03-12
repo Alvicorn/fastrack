@@ -108,20 +108,21 @@ Checks: >
   -readability-redundant-declaration,
   -readability-avoid-return-with-void-value,
   -readability-function-cognitive-complexity,
-  # -readability-convert-member-functions-to-static,
+  -readability-convert-member-functions-to-static,
 
 
 # Turn all the warnings from the checks above into errors.
 WarningsAsErrors: "*"
 # WarningsAsErrors: ""
 
-ExtraArgs:
-  - -std=c++17
-  - -isystem
-  - /usr/include/c++/12  # adjust for your system
-  - -I
-  - ./                    # project root
-  # - -Wno-error=unknown-includes
+
+# ExtraArgs:
+#   - -std=c++17
+#   - -isystem/usr/include/c++/12
+#   - -I./
+#   # - -Wno-error=unknown-includes
+
+SystemHeaders: false
 
 HeaderFilterRegex: '^(src|include)/.*\.(hpp|h)$'
 
