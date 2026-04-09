@@ -9,13 +9,17 @@
                 "/opt/ros/humble/include/**",
                 "/usr/include/**",
                 "${workspaceFolder}/src/fastrack_core/include",
-                "${workspaceFolder}/src/fastrack_core/test"
+                "${workspaceFolder}/src/fastrack_core/test",
+                "${workspaceFolder}/src/fastrack_dummy/include",
+                "${workspaceFolder}/src/fastrack_demo/include",
+                "${workspaceFolder}/install/fastrack_demo/include/fastrack_demo",
+                "/opt/ros/humble/include/nav_msgs"
             ],
             "name": "ROS",
             "intelliSenseMode": "gcc-x64",
             "compilerPath": "/usr/bin/gcc",
             "cStandard": "gnu11",
-            "cppStandard": "c++14"
+            "cppStandard": "c++17"
         }
     ],
     "version": 4

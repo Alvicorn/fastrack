@@ -28,7 +28,22 @@
         "**/log": true
     },
     "cSpell.words": [
+        "bugprone",
+        "colcon",
+        "dubins",
         "Eigen",
-        "isort"
+        "fastrack",
+        "glxinfo",
+        "GNUCXX",
+        "isort",
+        "LIBGL",
+        "nodiscard",
+        "nullptr",
+        "RCLCPP",
+        "rdot",
+        "rosidl",
+        "typesupport",
+        "Wextra",
+        "Wpedantic"
     ],
 }

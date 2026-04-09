@@ -5,4 +5,5 @@
 : "${ROS_DISTRO:?ROS_DISTRO must be set}"
 
 source "/opt/ros/$ROS_DISTRO/setup.bash" --
+source "/home/ros/.bashrc"
 exec "$@"

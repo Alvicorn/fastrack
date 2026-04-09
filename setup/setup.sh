@@ -1,6 +1,6 @@
 #!/bin/bash
 # Flags
-#     --no_import: Do not import from .repos 
+#     --no_import: Do not import from .repos
 #     --host: Install on host (skip tmux settings and fzf)
 #     --no_build: Do not build ROS packages
 import=true
@@ -16,11 +16,11 @@ while [[ $# -gt 0 ]]; do
     --host)
         container=false
         shift
-        ;;      
+        ;;
     --no_build)
         build=false
         shift
-        ;;            
+        ;;
     *)
         echo "Unknown option: $arg"
         exit 1
@@ -42,7 +42,7 @@ if [[ $container == true ]]; then
         echo "set -g history-limit 10000" >> ~/.tmux.conf
         echo "set -g mouse on" >> ~/.tmux.conf
     fi
-    
+
     # fzf
     if [ ! -d ~/.fzf/ ]; then
         git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
@@ -63,7 +63,7 @@ if [[ $build == true ]]; then
     sudo apt-get update
     rosdep update
     rosdep install -i --from-path src --rosdistro humble -y
-    
+
     # Build workspace
     colcon build --symlink-install
 fi

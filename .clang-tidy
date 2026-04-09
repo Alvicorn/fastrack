@@ -88,10 +88,8 @@ Checks: >
 
   -misc-const-correctness,
   -misc-include-cleaner,
-
-  # instead of declaring a free function static (which limits its linkage to the
-  #  translation unit), you should wrap it in an anonymous namespace
-  # -misc-use-anonymous-namespace
+  -misc-use-anonymous-namespace,
+  -misc-non-private-member-variables-in-classes,
 
   -modernize-use-nodiscard,
   -modernize-return-braced-init-list,
@@ -109,6 +107,8 @@ Checks: >
   -readability-avoid-return-with-void-value,
   -readability-function-cognitive-complexity,
   -readability-convert-member-functions-to-static,
+
+  -portability-template-virtual-member-function,
 
 
 # Turn all the warnings from the checks above into errors.

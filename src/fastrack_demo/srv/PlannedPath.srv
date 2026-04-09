@@ -1,0 +1,4 @@
+float64 robot_x
+float64 robot_y
+---
+nav_msgs/Path path

@@ -95,12 +95,12 @@ colcon test-result --all
 ```
 
 
-### Commiting
+### Committing
 
 For static analysis and automated linting a pre-commit file has been added with ruff,
 clang-tidy and clang format enabled.
 
-Before commiting a change, update the `compile_commands.json` file with following
+Before committing a change, update the `compile_commands.json` file with following
 ```bash
 # move to the root of the project
 cd /workspaces/fastrack
